@@ -1,0 +1,117 @@
+.container-contacts-page {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    align-items: center;
+
+
+}
+
+.wrapper-header {
+    position:sticky;
+    top:0;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    align-items: center;
+    background-color: rgb(105, 128, 164);
+    
+
+}
+
+.header-contacts-page {
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: 12%;
+    margin-bottom: 1%;
+
+
+
+}
+
+.header-contacts-page h1 {
+    color: rgb(250, 250, 251);
+    width: 100%;
+}
+
+.header-contacts-page input {
+    width: 30%;
+    min-width: 200px;
+    outline: none;
+    padding: 4px 8px;
+    border-radius: 10px;
+    transition: all 50ms ease-in;
+    border: 1px solid rgb(108, 108, 214);
+}
+
+.header-contacts-page input:hover {
+    transform: scale(1.08);
+    border: 2px solid rgb(108, 108, 214);
+}
+
+.card-contacts {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+    width: 100%;
+
+}
+
+.important-buttons {
+    height: 60px;
+    width: 160px;
+    margin-right:40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+}
+
+.important-buttons button {
+    box-sizing: border-box;
+    width: 158px;
+    padding: 4px;
+    border: 1px solid darkblue;
+    border-radius: 10px;
+    background-color: darkblue;
+    color: white;
+    transition: all 80ms ease-in;
+    cursor: pointer;
+}
+
+.important-buttons button:hover {
+    transform: scale(1.08);
+    border: 2px solid rgb(108, 108, 214);
+    background-color: blue;
+}
+
+
+@media (max-width:666px){
+    .wrapper-header {
+        flex-direction: column;
+    }
+    
+    .important-buttons { 
+        width: 320px;       
+        flex-direction: row;
+        justify-content: space-around;
+        margin:20px 0px 0px 0px;
+    }
+    .important-buttons button {
+        box-sizing: border-box;
+        width: 130px;
+        height: 30px;
+        padding: 4px; 
+    }
+    .header-contacts-page {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+    
+}
+    

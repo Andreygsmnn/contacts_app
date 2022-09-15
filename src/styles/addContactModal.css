@@ -1,0 +1,82 @@
+.modal {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.modal.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal-content {
+    padding: 40px;
+    background-color: white;
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+}
+
+.modal-content h2 {
+    color: darkblue;
+}
+
+.modal-inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-inputs input {
+    box-sizing: border-box;
+    margin: 2px;
+    min-width: 140px;
+    outline: none;
+    padding: 4px;
+    border: 1px solid darkblue;
+    border-radius: 10px;
+    transition: all 50ms ease-in;
+    text-align: center;
+}
+
+.modal-inputs input:hover {
+    border: 2px solid rgb(108, 108, 214);
+}
+
+.modal-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.modal-buttons button {
+    box-sizing: border-box;
+    min-width: 100px;
+    padding: 4px;
+    border: 1px solid darkblue;
+    border-radius: 10px;
+    background-color: darkblue;
+    color: white;
+    transition: all 80ms ease-in;
+    cursor: pointer;
+}
+
+.modal-buttons button:hover {
+    border: 1px solid rgb(108, 108, 214);
+    background-color: blue;
+    transform: scale(1.04)
+}
+
+.modal-buttons .cancel:hover {
+    border: 1px solid rgb(108, 108, 214);
+    background-color: rgb(255, 34, 0);
+    transform: scale(1.04)
+}
