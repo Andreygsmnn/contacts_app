@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { useAppDispatch } from '../hooks/redux_hook';
-import {AddContactType} from '../types/ReducerTypes';
+import { AddContactType } from '../types/ReducerTypes';
 import '../styles/addContactModal.css';
 import { addUser } from '../redux/actions';
 
 
-function AddContactModal({ active, setActive }:AddContactType) {
+function AddContactModal({ active, setActive }: AddContactType): JSX.Element {
     const dispatch = useAppDispatch()
     const [name, setName] = useState('')
     const [phone, setPhone] = useState('')

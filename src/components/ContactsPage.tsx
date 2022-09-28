@@ -7,7 +7,7 @@ import { useAppDispatch, useAppSelector } from '../hooks/redux_hook';
 import '../styles/contactspage.css';
 
 
-function ContactsPage() {
+function ContactsPage(): JSX.Element {
 
   const dispatch = useAppDispatch()
   const isAuth = useAppSelector(state => state.auth.isAuth)

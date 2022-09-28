@@ -4,7 +4,7 @@ import { inputLogin } from '../redux/actions';
 import { useNavigate } from 'react-router-dom';
 import '../styles/authform.css';
 
-function AuthForm() {
+function AuthForm(): JSX.Element {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
 
@@ -36,7 +36,7 @@ function AuthForm() {
                 placeholder='Введите пароль'
                 onChange={(e) => setPassword(e.target.value)} />
 
-            <button onClick={(e)=> handleAuth(e)}> Войти </button>
+            <button onClick={(e) => handleAuth(e)}> Войти </button>
         </form>
     )
 }

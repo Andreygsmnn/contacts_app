@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { useAppDispatch } from '../hooks/redux_hook';
-import {EditContactType} from '../types/ReducerTypes';
+import { EditContactType } from '../types/ReducerTypes';
 import '../styles/editContactModal.css';
 import { editUser } from '../redux/actions';
 
-function EditContactModal({ active, setActive, user }:EditContactType) {
+function EditContactModal({ active, setActive, user }: EditContactType): JSX.Element {
     const dispatch = useAppDispatch()
     const [inputName, setInputName] = useState(user.name)
     const [inputPhone, setInputPhone] = useState(user.phone)

@@ -2,8 +2,7 @@ import React from 'react';
 import AuthForm from './AuthForm';
 import '../styles/loginPage.css';
 
-function LoginPage() {
-
+function LoginPage(): JSX.Element {
 
   return (
     <div className="containerLoginPage">
